@@ -1,1 +1,137 @@
-hello world
+Topics:
+=
+
+Foo
+-
+
+Bar
+=
+
+Learn:
+software transactional memory
+couroutines
+* http://www.dabeaz.com/coroutines/Coroutines.pdf
+python 3
+* Improvements to GIL
+http://www.dabeaz.com/python/GIL.pdf
+pypy
+* Maybe getting rid of gil
+* jit genarator
+async python
+* twisted/stackless
+multitreading
+* Process states, ready-wait, iterrupt, OS
+mongohub
+* http://mongohub.todayclose.com
+virtualenv
+* For environment management
+* http://warm-mist-1692.heroku.com
+Smalltalk
+* Look at it again
+* Presentation with iphone
+* ZeroMQ
+* poll/select
+
+Jesse Noller:
+Slides are @ bitly (put this as well)
+Black on white (apple style)
+
+Practicality beats puriy
+Use it where it makes sense
+Approachability and at the same time maintainability
+
+Embrace the GIL
+* dis module
+import dis
+dis.dis(methodname)
+
+GIL protects (imagine that there is threads running on cores simultaneously)
+* Reference count updates
+* Mutable types
+
+Python interpreter is not written in a thread-safe manner. It does not use dictionalires in a threadsafe manner, and the refrence counting is not threadsafe. So you cannot run multi threads since it can be preemted
+
+
+Raymond Hettinger - what makes python awesome?
+* Async yield - get around the way of using callbacks (procedural aycn)
+* from itty import get, post, run_itty (small web framework)
+>> a tiny web service to track a box
+
+* with statement (awesome)
+* http://docs.python.org/library/abc.html
+
+leah culver - IRC 
+* Grove, IRC server for the company
+
+Alex Gaynor:
+* L
+
+Laura Thompson - processing firefox
+Sagrada, mozilla queueing system
+http://blog.mozilla.com/services/2011/09/15/introducing-project-sagrada/
+
+Craig Kerstiens
+State of packaging & Dep mgmt
+pypi
+pip & virtualenv
+pip install --use-mirrors
+
+Kenneth Reitz:
+https://github.com/kennethreitz/python-for-humans for slides
+Requests
+Legit
+OXS-GCC Installer
+Clint
+python requests is good for url opening stuff
+http://sphinx.pocoo.org/
+http://docs.python-guide.org/en/latest/index.html
+
+Avery Pennarun
+Bup - backup software (store your stuff in git, backup your computer - awesome)
+VPN software sshuttle
+* Tight inner loop is terrible
+* Line of code executes x80-100 slower
+* You don't want to run a line manytimes.. you just want to interpret once and then execute that really fast in c.. interpretation takes time
+* C module is cool
+* In python fork using multiple cores
+* scipy - puts C code in the python code
+* weakrefs - does not increase the reference count
+
+
+Gary Bernhardt:
+http://bret.appspot.com/entry/tornado-web-server
+* Flask if you want to add a small http server to an existing application
+* python-request to make an easy url call
+* http://pypi.python.org/pypi/requests
+
+Dustin Sallings
+* Breakdancer
+* http://dustin.github.com/2010/10/27/breakdancer.html
+
+Design:
+pdf download The Non-Designer's Design Book: Design and Typographic Principles for the Visual Novice
+
+Vagrant - 
+* Creating a virtual environment
+* Create one for istanbella
+http://vagrantup.com/docs/getting-started/index.html
+
+Needle Test Case
+* Compare the screenshots for css.. http://needle.readthedocs.org/en/latest/
+* How do you run selenium in a headless environment
+
+Pandas:
+* Small data data analysis
+http://pandas.sourceforge.net/
+
+ipython notebook
+
+Supportig DSLs in Python @pwang
+
+Random random stuff:
+* Command two finger swipe up/down, and then you will zoom in
+
+Stackful
+*Leak in values into libraries with globals
+* 
+
